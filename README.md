@@ -1,1 +1,2 @@
-# Hashira1
+Approach is : 
+The approach reads each JSON file, manually parses the roots with their bases and encoded values, and converts these values to decimal integers using GMP for big number support. It then selects the minimum number of points `k` required to uniquely determine the polynomial and applies Lagrange interpolation at `x = 0` to calculate the constant term of the polynomial. This constant term represents the secret. The process is repeated for both testcases, and the results are printed.
